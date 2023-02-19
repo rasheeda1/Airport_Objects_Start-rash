@@ -5,11 +5,12 @@ class Person {
             // 2a. Bags should contain/reference a data type for storing more than one bag object.
 
     // Include an addBag method
-    constructor(name){
+    constructor(name, bags){
         this.name = name;
+        this.bags = [];
     }
-    constructor(bags){
-        this.bags = bags;
+    addBag(bag){
+        this.bags.push(bag)
     }
 }
 
